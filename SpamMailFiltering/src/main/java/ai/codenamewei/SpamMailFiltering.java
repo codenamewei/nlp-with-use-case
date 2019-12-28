@@ -112,7 +112,7 @@ public class SpamMailFiltering
     public static void main(String[] args) throws Exception
     {
         //Loading of pretrained word vectors
-        log.info("Loading pretrained embedding model. This would takes a while...");
+        log.info("******Loading pretrained embedding model. This would takes a while...******");
         WordVectors wordVectors = WordVectorSerializer.loadStaticModel(new File(WORD_VECTORS_PATH + WORD_VECTOR_FILE));
 
         //Set data root directory path

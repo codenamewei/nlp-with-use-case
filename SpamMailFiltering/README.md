@@ -4,4 +4,4 @@
 </p>
 
 Implementation of text classification model with DeepLearning4J.  
-Read the [medium article]() for step to step walk through.
+Read the [medium article](https://link.medium.com/dtyjReZQM2) for step to step walk through.

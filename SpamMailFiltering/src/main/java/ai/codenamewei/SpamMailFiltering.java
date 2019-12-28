@@ -98,7 +98,7 @@ public class SpamMailFiltering
     // Else, it will cause error
     // ------> PATH\TO\YOUR\VECTOR\GoogleNews-vectors-negative300.bin.gz
 
-    public static final String WORD_VECTORS_PATH = "//Users//wei//Documents//models//";
+    public static final String WORD_VECTORS_PATH = "PATH\\TO\\YOUR\\VECTOR\\";
 
     public static final String WORD_VECTOR_FILE = "GoogleNews-vectors-negative300.bin.gz";
     public static final int WORD_VECTORS_LENGTH = 300;  //Length of the word vectors. The length is 300 for Google News vector .

@@ -1,0 +1,1 @@
+Multiply the numbers independently and count decimal points then, for the division, push the decimal places like i showed you.

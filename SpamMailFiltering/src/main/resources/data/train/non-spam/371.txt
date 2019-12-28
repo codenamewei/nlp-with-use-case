@@ -1,0 +1,1 @@
+The message sent is askin for  &lt;#&gt; dollars. Shoul i pay  &lt;#&gt;  or  &lt;#&gt; ?

@@ -95,12 +95,12 @@ public class SpamMailFiltering
     // Else, it will cause error
     // ------> PATH\TO\YOUR\VECTOR\GoogleNews-vectors-negative300.bin.gz
 
-    public static final String WORD_VECTORS_PATH = "/Users/wei/Documents/models/";
+    public static final String WORD_VECTORS_PATH = "PATH\\TO\\YOUR\\VECTOR\\";
 
     public static final String WORD_VECTOR_FILE = "GoogleNews-vectors-negative300.bin.gz";
     public static final int WORD_VECTORS_LENGTH = 300;  //Length of the word vectors. The length is 300 for Google News vector .
 
-    public static final int SEED = 123;                 //Seed for reproducibility
+    public static final int SEED = 1234;                 //Seed for reproducibility
     public static final int EPOCHS = 1;                 //Full passes of training data
     public static final int CLASSES = 2;                //Number of classes, spam & normal mail
     public static final int BATCH_SIZE = 64;           //Number of examples in each minibatch
@@ -109,6 +109,7 @@ public class SpamMailFiltering
     public static void main(String[] args) throws Exception
     {
         //Loading of pretrained word vectors
+        log.info("Loading pretrained embedding model. This would takes a while...")
         WordVectors wordVectors = WordVectorSerializer.loadStaticModel(new File(WORD_VECTORS_PATH + WORD_VECTOR_FILE));
 
         //Set data root directory path
@@ -153,12 +154,13 @@ public class SpamMailFiltering
         model.setListeners(new StatsListener(statsStorage));
 
         //Train model
-        System.out.println("Start training...");
+        log.info("Training model...")
         model.fit(trainIter, EPOCHS);
 
         //Evaluation on testing data set
         SpamMailDataSetIterator testIter = new SpamMailDataSetIterator(dataBaseDir, wordVectors, 1, TRUNCATED_LENGTH, false);
 
+        log.info("Evaluating model...")
         Evaluation eval = model.evaluate(testIter);
         System.out.println(eval.confusionMatrix());
 

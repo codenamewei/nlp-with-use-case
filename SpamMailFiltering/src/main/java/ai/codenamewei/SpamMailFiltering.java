@@ -37,6 +37,7 @@ import org.nd4j.linalg.indexing.NDArrayIndex;
 import org.nd4j.linalg.io.ClassPathResource;
 import org.nd4j.linalg.learning.config.Adam;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 
@@ -88,6 +89,8 @@ import java.io.File;
  *
  * @author codenamewei
  */
+
+@Slf4j
 public class SpamMailFiltering
 {
     // Google News Vector file path
@@ -109,7 +112,7 @@ public class SpamMailFiltering
     public static void main(String[] args) throws Exception
     {
         //Loading of pretrained word vectors
-        log.info("Loading pretrained embedding model. This would takes a while...")
+        log.info("Loading pretrained embedding model. This would takes a while...");
         WordVectors wordVectors = WordVectorSerializer.loadStaticModel(new File(WORD_VECTORS_PATH + WORD_VECTOR_FILE));
 
         //Set data root directory path
@@ -154,13 +157,13 @@ public class SpamMailFiltering
         model.setListeners(new StatsListener(statsStorage));
 
         //Train model
-        log.info("Training model...")
+        log.info("Training model...");
         model.fit(trainIter, EPOCHS);
 
         //Evaluation on testing data set
         SpamMailDataSetIterator testIter = new SpamMailDataSetIterator(dataBaseDir, wordVectors, 1, TRUNCATED_LENGTH, false);
 
-        log.info("Evaluating model...")
+        log.info("Evaluating model...");
         Evaluation eval = model.evaluate(testIter);
         System.out.println(eval.confusionMatrix());
 

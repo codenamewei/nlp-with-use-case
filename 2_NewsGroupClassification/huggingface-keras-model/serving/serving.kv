@@ -1,0 +1,52 @@
+<Serving>:
+    BoxLayout
+        id: serving_layout
+        orientation: 'vertical'
+        padding: [10,50,10,50]
+        spacing: 50
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            Label:
+                text: 'Konduit-Serving'
+                font_size: 18
+                halign: 'left'
+                text_size: root.width-20, 20
+
+            TextInput:
+                id: host
+                text: "http://localhost:65322"
+                multiline:False
+                font_size: 28
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Data Path'
+                halign: 'left'
+                font_size: 18
+                text_size: root.width-20, 20
+
+            TextInput:
+                id: dataPath
+                text: "misc.forsale\\76188"
+                multiline:False
+                font_size: 28
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                id: prediction
+                text: 'Output'
+                halign: 'left'
+                font_size: 24
+                color: .8,.9,0,1
+                bold: True
+                text_size: root.width-25, 25
+
+        Button:
+            text: 'Send Request'
+            font_size: 24
+
+            on_press: root.predict()

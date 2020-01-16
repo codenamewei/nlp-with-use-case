@@ -1,1 +1,0 @@
-it's still not working. And this time i also tried adding zeros. That was the savings. The checking is  &lt;#&gt; 

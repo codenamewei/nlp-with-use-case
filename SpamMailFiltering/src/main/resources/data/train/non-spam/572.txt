@@ -1,1 +1,0 @@
-This pay is  &lt;DECIMAL&gt;  lakhs:)

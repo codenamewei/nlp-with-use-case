@@ -1,1 +1,0 @@
-It only does simple arithmetic not percentages.

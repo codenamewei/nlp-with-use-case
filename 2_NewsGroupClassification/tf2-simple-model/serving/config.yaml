@@ -1,0 +1,36 @@
+serving:
+  http_port: 65322
+  input_data_format: NUMPY
+  output_data_format: JSON
+  prediction_type: CLASSIFICATION
+  log_timings: True
+  extra_start_args: -Xmx8g
+steps:
+  keras_step:
+    type: KERAS
+    model_loading_path: tf2-newsgroup-model.h5
+    input_names:
+      - default
+    input_column_names:
+      default:
+        - NDArray
+    input_schemas:
+      default:
+        - NDArray
+    output_names:
+      - output
+    output_schemas:
+      default:
+        - NDArray
+    output_column_names:
+      default:
+        - NDArray
+    parallel_inference_config:
+      workers: 1
+client:
+  port: 65322
+  input_data_format: NUMPY
+  prediction_type: CLASSIFICATION
+  output_data_format: JSON
+  output_names:
+    - output

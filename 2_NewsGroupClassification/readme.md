@@ -1,4 +1,4 @@
 # News Group Classification
 <p align="center">
-  <img src="metadata/konduit-serving.PNG">
+  <img width="550" height="450" src="metadata/konduit-serving.PNG">
 </p>

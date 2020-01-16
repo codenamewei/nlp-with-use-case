@@ -4,7 +4,7 @@
 </p>  
 Implementation of NLP use cases in various scenarios
 
-## Use Cases
+# Use Cases
 ### **0. Word2Vec**:  
 Word2Vec Implementation in  
 - **Java (DeepLearning4J)** - Training of word2vec skip-gram model on hotel industry corpus  

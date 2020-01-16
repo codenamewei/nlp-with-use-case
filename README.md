@@ -1,6 +1,6 @@
 # Natural Language Processing (NLP) with Use Cases
 <p align="center">
-  <img src="metadata/robot.gif">
+  <img width="460" height="300" src="metadata/nlp.jpg">
 </p>  
 Implementation of NLP use cases in various scenarios
 

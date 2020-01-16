@@ -1,6 +1,6 @@
 # Word2Vec
 <p align="center">
-  <img width="460" height="300" src="metadata/languages.jpg">
+  <img src="metadata/languages.jpg">
 </p>
 
 Word2Vec Implementation in

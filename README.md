@@ -1,6 +1,6 @@
 # Natural Language Processing (NLP) with Use Cases
 <p align="center">
-  <img width="460" height="300" src="metadata/nlp.jpg">
+  <img width="700" height="500" src="metadata/nlp.jpg">
 </p>  
 Implementation of NLP use cases in various scenarios
 

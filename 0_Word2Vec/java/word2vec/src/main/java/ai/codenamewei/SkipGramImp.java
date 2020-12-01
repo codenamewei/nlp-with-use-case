@@ -1,4 +1,4 @@
-/* *****************************************************************************
+/* ****************************************************************************
 Copyright 2019 codenamewei
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -126,7 +126,7 @@ public class SkipGramImp
             log.info("Save Word2Vec Model as {}", modelSavedPath);
             WordVectorSerializer.writeWord2VecModel(word2vec, modelSavedPath);
 
-
+            log.info("Model saved at: " + modelSavedPath);
         }
         else //Load model
         {

@@ -28,3 +28,7 @@ hs_err_pid*
 
 .DS_Store
 .ipynb_checkpoints
+
+
+# data file
+*.csv

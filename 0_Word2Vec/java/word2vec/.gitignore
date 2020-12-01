@@ -1,0 +1,5 @@
+# intellij file
+*.iml
+
+# data file
+*.csv

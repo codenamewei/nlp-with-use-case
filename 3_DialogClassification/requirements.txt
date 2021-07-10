@@ -1,0 +1,6 @@
+pandas==1.2.*
+numpy==1.20.*
+requests==2.24.*
+nltk==3.6.*
+fastapi==0.66.*
+uvicorn==0.14.*

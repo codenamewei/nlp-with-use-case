@@ -1,13 +1,10 @@
-import pandas as pd
-import numpy as np
 import re
-import nltk 
 import pickle
-from nltk.corpus import stopwords
-from sklearn.feature_extraction.text import TfidfVectorizer
 from fastapi import FastAPI
+from pydantic import BaseModel
 
-app = FastAPI()
+class Input(BaseModel):
+    input_str: str
 
 model_path = "sklearn_model.pickle"
 vectorizer_path = "sklearn_vectorizer.pickle"
@@ -18,19 +15,27 @@ model = pickle.load(open(model_path, 'rb'))
 #load vectorizer
 vectorizer = pickle.load(open(vectorizer_path, 'rb'))
 
+
+app = FastAPI()
+
 @app.get("/")
 async def root():
     return {"message": "Server up!"}
 
-
+#example body
+#{"input_str": "San Francisco to San Diego.The aircraft was clean and comfortable. The snacks and beverages were nice and the attendees are helpful."}
 @app.put("/predict")
-async def predict():
+async def predict(input: Input):
     
-    stripped_input = [preprocess("@VirginAmerica I didn't today... Must mean I need to take another trip!")]
+    input_body = input.dict()
+    
+    input = input_body['input_str']
+    stripped_input = [preprocess(input)]
+
     test_feature = vectorizer.transform(stripped_input).toarray()
     
     loaded_prediction = model.predict(test_feature)
-    
+
     return {"response": loaded_prediction[0]}
 
 
@@ -55,5 +60,6 @@ def preprocess(feature):
 
     return processed_feature
 
+# local run with uvicorn skdeploy:app --host 0.0.0.0 --port 8081
 if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=10233)
+    uvicorn.run(app, host='127.0.0.1', port=8081)

@@ -1,7 +1,9 @@
 ## Training
 
 **Environment Creation**
+
 Run the following commands in **train** folder
+
 _Note_: Only need to create environment for once
 ```
 conda create -n sentiment_train python=3.8
@@ -47,13 +49,13 @@ docker push codenamewei/nlp:sksentiment0.1.2
 ```        
 docker pull codenamewei/nlp:sksentiment0.1.2
 docker run -d -p 5000:5000 codenamewei/nlp:sksentiment0.1.2
-``
+```
+
 _Sample Request_
 ```
 PUT http://localhost:5000/predict
 
 {"input_str": "San Francisco to San Diego.The aircraft was clean and comfortable. The snacks and beverages were nice and the attendees are helpful."}
-
 ```
 
 <p align="center">

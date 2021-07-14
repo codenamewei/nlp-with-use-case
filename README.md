@@ -25,7 +25,7 @@ Implementation in
 
 
 ### **3. Sentiment Analysis**:  
-The use case of sentiment analysis of airlines reviews trained and served with docker.
+The use case of sentiment analysis of airlines reviews trained and served with docker.  
 Implementation with
 - Training: **Scikit-learn Random Forest**
 - Deployment: **Docker**

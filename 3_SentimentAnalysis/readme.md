@@ -1,3 +1,26 @@
+## Overview
+
+**File Structure**
+```
+.
+├── readme.md
+|
+├── deploy
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── resources
+│   │   ├── sklearn_model.pickle
+│   │   └── sklearn_vectorizer.pickle
+│   └── skdeploy.py
+|
+└── train
+|   ├── requirements.txt
+|   └── sktrain.ipynb
+|
+└── metadata
+    └── postman.png
+```
+
 ## Training
 
 **Environment Creation**

@@ -9,5 +9,7 @@ COPY requirements.txt /home/workdir/
 
 WORKDIR /home/workdir/
 RUN /usr/local/bin/python -m pip install --upgrade pip && pip install -r requirements.txt
-CMD ["uvicorn", "skdeploy:app", "--host", "0.0.0.0", "--port", "8081"]
+
+EXPOSE 8081
+CMD ["uvicorn", "skdeploy:app", "--host", "0.0.0.0", "--port", "5000"]
 

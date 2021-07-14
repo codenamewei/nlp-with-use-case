@@ -60,6 +60,6 @@ def preprocess(feature):
 
     return processed_feature
 
-# local run with uvicorn skdeploy:app --host 0.0.0.0 --port 8081
+# local run with uvicorn skdeploy:app --host 0.0.0.0 --port 5000
 if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=8081)
+    uvicorn.run(app, host='127.0.0.1', port=5000)

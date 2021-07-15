@@ -1,5 +1,9 @@
 ## Overview
 
+<p align="center">
+  <img src="metadata/clientserver.png">
+</p>  
+
 **File Structure**
 ```
 .

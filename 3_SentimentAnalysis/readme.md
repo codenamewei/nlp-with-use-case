@@ -39,9 +39,12 @@ pip install -r requirements.txt
 ```
 
 **Run Training**
+1. Prepare jupyter lab editor environment
 ```
 jupyter lab
 ```
+
+2. Run notebook
 
 ## Deployment
 
@@ -49,6 +52,7 @@ jupyter lab
 
 **Environment Creation**
 Run the following commands in **deploy** folder
+
 _Note_: Only need to create environment for once
 ```
 conda create -n sentiment_deploy python=3.8 -y

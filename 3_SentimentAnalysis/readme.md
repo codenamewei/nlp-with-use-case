@@ -33,7 +33,7 @@ Run the following commands in **train** folder
 
 _Note_: Only need to create environment for once
 ```
-conda create -n sentiment_train python=3.8
+conda create -n sentiment_train python=3.8 -y
 conda activate sentiment_train
 pip install -r requirements.txt
 ```
@@ -51,7 +51,7 @@ jupyter lab
 Run the following commands in **deploy** folder
 _Note_: Only need to create environment for once
 ```
-conda create -n sentiment_deploy python=3.8
+conda create -n sentiment_deploy python=3.8 -y
 conda activate sentiment_deploy
 pip install -r requirements.txt
 ```

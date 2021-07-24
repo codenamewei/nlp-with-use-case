@@ -35,7 +35,7 @@ _Note_: Only need to create environment for once
 ```
 conda create -n sentiment_train python=3.8
 conda activate sentiment_train
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 **Run Training**
@@ -53,12 +53,12 @@ _Note_: Only need to create environment for once
 ```
 conda create -n sentiment_deploy python=3.8
 conda activate sentiment_deploy
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 **Run App**
 ```
-# conda activate sentiment_env
+# conda activate sentiment_deploy
 uvicorn skdeploy:app --host 0.0.0.0 --port 5000
 ```
 

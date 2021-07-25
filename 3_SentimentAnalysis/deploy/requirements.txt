@@ -1,3 +1,0 @@
-fastapi==0.66.*
-uvicorn==0.14.*
-scikit-learn==0.24.*

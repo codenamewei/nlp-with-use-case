@@ -72,14 +72,14 @@ uvicorn skdeploy:app --host 0.0.0.0 --port 5000
 **Build docker image**
 ```
 docker build -t skreview .
-docker tag skreview:latest codenamewei/nlp:skreview.1.2
-docker push codenamewei/nlp:skreview.1.2
+docker tag skreview:latest codenamewei/nlp:skreview1.0
+docker push codenamewei/nlp:skreview1.0
 ```
 
 **Run docker image**
 ```        
-docker pull codenamewei/nlp:skreview.1.2
-docker run -d -p 5000:5000 codenamewei/nlp:skreview.1.2
+docker pull codenamewei/nlp:skreview1.0
+docker run -d -p 5000:5000 codenamewei/nlp:skreview1.0
 ```
 
 _Sample Request_

@@ -24,8 +24,12 @@ Implementation in
 - **HuggingFace Bert Embeddings with Keras Model**
 
 
-### **3. Sentiment Analysis**:  
-The use case of sentiment analysis of airlines reviews trained and served with docker.  
+### **3. Review Analysis**:  
+The use case of sentiment analysis of airlines reviews trained and served with docker on Digital Ocean.  
 Implementation with
 - Training: **Scikit-learn Random Forest**
-- Deployment: **Docker**
+- Deployment: **Docker & Digital Ocean**
+
+Medium Posts
+- [Part1](https://codenamewei.medium.com/airline-review-analysis-part-1-model-training-415aec4a19dd)
+- [Part2](https://codenamewei.medium.com/airline-review-analysis-part-2-model-serving-on-digital-ocean-1383d807b425)

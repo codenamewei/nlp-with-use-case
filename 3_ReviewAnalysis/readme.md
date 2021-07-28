@@ -1,8 +1,6 @@
 ## Overview
 
-<p align="center">
-  <img src="metadata/clientserver.png">
-</p>  
+![clientserver](https://user-images.githubusercontent.com/33477318/127261251-29aa6081-adc8-4344-a3c6-0802ce11b939.png)
 
 **File Structure**
 ```
@@ -89,6 +87,4 @@ PUT http://localhost:5000/predict
 {"input_str": "San Francisco to San Diego.The aircraft was clean and comfortable. The snacks and beverages were nice and the attendees are helpful."}
 ```
 
-<p align="center">
-  <img src="metadata/postman.png">
-</p>  
+![postman](https://user-images.githubusercontent.com/33477318/127261255-ab51be67-05d1-4e0c-8acf-f5cd779910e5.png)

@@ -65,7 +65,7 @@ uvicorn skdeploy:app --host 0.0.0.0 --port 5000
 ```
 
 ### Docker Environment
-- Images hosted at [docker hub](https://hub.docker.com/r/codenamewei/nlp/tags?page=1&ordering=last_updated)
+- Images hosted at [docker hub](https://hub.docker.com/r/codenamewei/nlp)
 
 **Build docker image**
 ```

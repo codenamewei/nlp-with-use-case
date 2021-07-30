@@ -31,5 +31,5 @@ Implementation with
 - Deployment: **Docker & Digital Ocean**
 
 Medium Posts
-- [Part1](https://codenamewei.medium.com/airline-review-analysis-part-1-model-training-415aec4a19dd)
-- [Part2](https://codenamewei.medium.com/airline-review-analysis-part-2-model-serving-on-digital-ocean-1383d807b425)
+- [Part1](https://medium.datadriveninvestor.com/nlp-review-analysis-part-1-model-training-531f7f470b87)
+- [Part2](https://medium.datadriveninvestor.com/nlp-review-analysis-part-2-model-serving-on-digital-ocean-a76d296eb53c)

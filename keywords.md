@@ -4,6 +4,7 @@ Below is an non-exhaustive list covering important keywords in Natural Language 
 ### General
 - corpus
 - word embedding/word vector/word representation
+- contextual word representations
 - one-hot encoding
 - stopwords
 - Out of Vocabulary (OOV)
@@ -31,6 +32,7 @@ Below is an non-exhaustive list covering important keywords in Natural Language 
 - Continuous Bag of Words (CBOW)
 - N-Grams
 - Recurrent Neural Network (RNN), Long Short Term Memory (LSTM)
+- Embeddings from Language Models (ELMo)
 - BERT
 - BART
 - TF5

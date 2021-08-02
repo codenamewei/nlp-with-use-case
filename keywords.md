@@ -53,3 +53,5 @@ Below is an non-exhaustive list covering important keywords in Natural Language 
 - Dependency Parsing
 - Part of Speech (POS) Tagging
 - Masked Language Modelling
+- Zero Shot Classification
+- Text Generation  

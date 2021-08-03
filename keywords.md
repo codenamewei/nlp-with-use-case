@@ -4,6 +4,8 @@ Below is an non-exhaustive list covering important keywords in Natural Language 
 ### General
 - corpus
 - word embedding/word vector/word representation
+- contextual word representations
+- one-hot encoding
 - stopwords
 - Out of Vocabulary (OOV)
 - attention
@@ -25,10 +27,12 @@ Below is an non-exhaustive list covering important keywords in Natural Language 
 
 ### Algorithm
 - Term Frequency — Inverse Document Frequency (TF-IDF)
+- Global Vectors for Word Representation (GloVE)
 - Skip Grams
 - Continuous Bag of Words (CBOW)
 - N-Grams
 - Recurrent Neural Network (RNN), Long Short Term Memory (LSTM)
+- Embeddings from Language Models (ELMo)
 - BERT
 - BART
 - TF5
@@ -49,3 +53,5 @@ Below is an non-exhaustive list covering important keywords in Natural Language 
 - Dependency Parsing
 - Part of Speech (POS) Tagging
 - Masked Language Modelling
+- Zero Shot Classification
+- Text Generation  

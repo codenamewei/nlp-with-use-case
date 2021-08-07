@@ -5,18 +5,18 @@
 Implementation of NLP use cases in various scenarios
 
 # Use Cases
-### **0. Word2Vec**:  
+### **0. Word2Vec**  
 Word2Vec Implementation in  
 - **Java (DeepLearning4J)** - Training of word2vec skip-gram model on hotel industry corpus  
 - **Python (Gensim)** - Visualization of word vectors trained with Glove
 
 
-### **1. Spam Mail Filtering**:  
+### **1. Spam Mail Filtering**  
 Implementation of spam mail filtering with DeepLearning4J  
 Medium Link: [here](https://link.medium.com/dtyjReZQM2)
 
 
-### **2. News Group Classification**:  
+### **2. News Group Classification**  
 Serving of classification model with konduit-serving
 The model trained with 20 classes of news types.  
 Implementation in
@@ -24,7 +24,7 @@ Implementation in
 - **HuggingFace Bert Embeddings with Keras Model**
 
 
-### **3. Review Analysis**:  
+### **3. Review Analysis**  
 The use case of sentiment analysis of airlines reviews trained and served with docker on Digital Ocean.  
 Implementation with
 - Training: **Scikit-learn Random Forest**
